@@ -206,9 +206,15 @@ body {
   flex-basis: calc((100% - 72px) / 4);
   fill: var(--secondary-main-color);
 }
+
 .serv-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 8px;
-  padding: 24px 100px;
+  padding-right: 5px;
+  padding-left: 5px;
+  height: 112px;
   background-color: var(--team-bg-color);
   border-radius: 4px;
 }
@@ -313,9 +319,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
   height: 88px;
-  fill: var(--customers-section);
+  color: var(--customers-section);
   border: 1px solid var(--customers-section);
   border-radius: 4px;
 }
@@ -325,6 +330,11 @@ body {
   fill: var(--hover-focus-color);
   border-color: var(--hover-focus-color);
 }
+
+.customers-icon {
+  fill: currentColor;
+}
+
 /* -------Footer-------- */
 
 .footer {
@@ -380,7 +390,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #000000;
+  background-color: var(--accent-color);
 }
 
 .social-media-link:hover,
